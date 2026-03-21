@@ -1,0 +1,3 @@
+../Core/Src/general.c:7:6:GENERAL_Init	8	static
+../Core/Src/general.c:24:6:GENERAL_RUN	4	static
+../Core/Src/general.c:34:6:GENERAL_TFT_SelfTest	8	static

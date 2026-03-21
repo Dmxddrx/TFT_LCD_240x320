@@ -1,0 +1,15 @@
+../Core/Src/tft.c:8:6:TFT_Init	8	static
+../Core/Src/tft.c:17:6:TFT_Clear	16	static
+../Core/Src/tft.c:22:6:TFT_BacklightOn	8	static
+../Core/Src/tft.c:27:6:TFT_BacklightOff	8	static
+../Core/Src/tft.c:42:6:TFT_DrawChar	40	static
+../Core/Src/tft.c:72:6:TFT_PrintFont	40	static
+../Core/Src/tft.c:94:6:TFT_Print	32	static
+../Core/Src/tft.c:100:6:TFT_PrintMed	32	static
+../Core/Src/tft.c:106:6:TFT_PrintLarge	32	static
+../Core/Src/tft.c:115:6:TFT_DrawPixel	16	static
+../Core/Src/tft.c:120:6:TFT_FillRect	32	static
+../Core/Src/tft.c:126:6:TFT_DrawRect	32	static
+../Core/Src/tft.c:132:6:TFT_DrawLine	32	static
+../Core/Src/tft.c:138:6:TFT_DrawCircle	24	static
+../Core/Src/tft.c:144:6:TFT_FillCircle	24	static

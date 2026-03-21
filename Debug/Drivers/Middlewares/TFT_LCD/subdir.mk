@@ -1,0 +1,30 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (14.3.rel1)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Drivers/Middlewares/TFT_LCD/ILI9341.c \
+../Drivers/Middlewares/TFT_LCD/fonts.c 
+
+OBJS += \
+./Drivers/Middlewares/TFT_LCD/ILI9341.o \
+./Drivers/Middlewares/TFT_LCD/fonts.o 
+
+C_DEPS += \
+./Drivers/Middlewares/TFT_LCD/ILI9341.d \
+./Drivers/Middlewares/TFT_LCD/fonts.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Drivers/Middlewares/TFT_LCD/%.o Drivers/Middlewares/TFT_LCD/%.su Drivers/Middlewares/TFT_LCD/%.cyclo: ../Drivers/Middlewares/TFT_LCD/%.c Drivers/Middlewares/TFT_LCD/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I"C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+
+clean: clean-Drivers-2f-Middlewares-2f-TFT_LCD
+
+clean-Drivers-2f-Middlewares-2f-TFT_LCD:
+	-$(RM) ./Drivers/Middlewares/TFT_LCD/ILI9341.cyclo ./Drivers/Middlewares/TFT_LCD/ILI9341.d ./Drivers/Middlewares/TFT_LCD/ILI9341.o ./Drivers/Middlewares/TFT_LCD/ILI9341.su ./Drivers/Middlewares/TFT_LCD/fonts.cyclo ./Drivers/Middlewares/TFT_LCD/fonts.d ./Drivers/Middlewares/TFT_LCD/fonts.o ./Drivers/Middlewares/TFT_LCD/fonts.su
+
+.PHONY: clean-Drivers-2f-Middlewares-2f-TFT_LCD
+
