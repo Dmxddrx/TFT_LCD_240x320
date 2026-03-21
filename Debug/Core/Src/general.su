@@ -1,3 +1,11 @@
-../Core/Src/general.c:7:6:GENERAL_Init	8	static
-../Core/Src/general.c:24:6:GENERAL_RUN	4	static
-../Core/Src/general.c:34:6:GENERAL_TFT_SelfTest	8	static
+../Core/Src/general.c:87:13:get_time	32	static
+../Core/Src/general.c:102:13:draw_signal	32	static
+../Core/Src/general.c:113:13:draw_wifi	32	static
+../Core/Src/general.c:123:13:draw_battery	40	static
+../Core/Src/general.c:142:13:draw_statusbar	40	static
+../Core/Src/general.c:161:13:draw_main_screen	40	static
+../Core/Src/general.c:227:13:update_main_screen	40	static
+../Core/Src/general.c:262:13:draw_notif_panel	80	static
+../Core/Src/general.c:314:6:GENERAL_Init	16	static
+../Core/Src/general.c:328:6:GENERAL_RUN	32	static
+../Core/Src/general.c:357:6:GENERAL_ButtonPress	4	static
