@@ -22,6 +22,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "general.h"
+#include <stdio.h>
+
+#include "../../Drivers/Middlewares/TFT_LCD_2.4_320x240/touch.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,6 +98,7 @@ int main(void)
   MX_FSMC_Init();
   /* USER CODE BEGIN 2 */
   GENERAL_Init();
+  TOUCH_Init(&hadc1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -104,13 +108,26 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  /* Button check — adjust GPIO to your actual button pin */
-	  if (HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin) == GPIO_PIN_RESET) {
-	      GENERAL_ButtonPress();                                           /* change panel immediately on press */
-	      while (HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin) == GPIO_PIN_RESET); /* hold — wait, do nothing   */
-	      HAL_Delay(200);                                                   /* debounce after release            */
+
+	  Touch_t t = TOUCH_Read();
+
+	  /* debug — show raw ADC values on screen */
+	  char buf[32];
+	  if (t.pressed) {
+	      sprintf(buf, "X:%4d Y:%4d   ", t.x, t.y);
+	      TFT_Print(10, 10, Green, buf);
+	  } else {
+	      TFT_Print(10, 10, Red, "No touch        ");
 	  }
-	  GENERAL_RUN();
+
+
+	  /* Button check — adjust GPIO to your actual button pin
+	  if (HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin) == GPIO_PIN_RESET) {
+	      GENERAL_ButtonPress();
+	      while (HAL_GPIO_ReadPin(BTN1_GPIO_Port, BTN1_Pin) == GPIO_PIN_RESET);
+	      HAL_Delay(200);
+	  }
+	  GENERAL_RUN();*/
   }
   /* USER CODE END 3 */
 }

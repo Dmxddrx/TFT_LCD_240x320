@@ -1,6 +1,6 @@
-Drivers/Middlewares/TFT_LCD/fonts.o: \
- ../Drivers/Middlewares/TFT_LCD/fonts.c \
- ../Drivers/Middlewares/TFT_LCD/fonts.h \
+Drivers/Middlewares/TFT_LCD_2.4_320x240/touch.o: \
+ ../Drivers/Middlewares/TFT_LCD_2.4_320x240/touch.c \
+ ../Drivers/Middlewares/TFT_LCD_2.4_320x240/touch.h ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -31,7 +31,8 @@ Drivers/Middlewares/TFT_LCD/fonts.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
-../Drivers/Middlewares/TFT_LCD/fonts.h:
+../Drivers/Middlewares/TFT_LCD_2.4_320x240/touch.h:
+../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:

@@ -6,15 +6,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Drivers/Middlewares/TFT_LCD/ILI9341.c \
-../Drivers/Middlewares/TFT_LCD/fonts.c 
+../Drivers/Middlewares/TFT_LCD/fonts.c \
+../Drivers/Middlewares/TFT_LCD/touch.c 
 
 OBJS += \
 ./Drivers/Middlewares/TFT_LCD/ILI9341.o \
-./Drivers/Middlewares/TFT_LCD/fonts.o 
+./Drivers/Middlewares/TFT_LCD/fonts.o \
+./Drivers/Middlewares/TFT_LCD/touch.o 
 
 C_DEPS += \
 ./Drivers/Middlewares/TFT_LCD/ILI9341.d \
-./Drivers/Middlewares/TFT_LCD/fonts.d 
+./Drivers/Middlewares/TFT_LCD/fonts.d \
+./Drivers/Middlewares/TFT_LCD/touch.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +27,7 @@ Drivers/Middlewares/TFT_LCD/%.o Drivers/Middlewares/TFT_LCD/%.su Drivers/Middlew
 clean: clean-Drivers-2f-Middlewares-2f-TFT_LCD
 
 clean-Drivers-2f-Middlewares-2f-TFT_LCD:
-	-$(RM) ./Drivers/Middlewares/TFT_LCD/ILI9341.cyclo ./Drivers/Middlewares/TFT_LCD/ILI9341.d ./Drivers/Middlewares/TFT_LCD/ILI9341.o ./Drivers/Middlewares/TFT_LCD/ILI9341.su ./Drivers/Middlewares/TFT_LCD/fonts.cyclo ./Drivers/Middlewares/TFT_LCD/fonts.d ./Drivers/Middlewares/TFT_LCD/fonts.o ./Drivers/Middlewares/TFT_LCD/fonts.su
+	-$(RM) ./Drivers/Middlewares/TFT_LCD/ILI9341.cyclo ./Drivers/Middlewares/TFT_LCD/ILI9341.d ./Drivers/Middlewares/TFT_LCD/ILI9341.o ./Drivers/Middlewares/TFT_LCD/ILI9341.su ./Drivers/Middlewares/TFT_LCD/fonts.cyclo ./Drivers/Middlewares/TFT_LCD/fonts.d ./Drivers/Middlewares/TFT_LCD/fonts.o ./Drivers/Middlewares/TFT_LCD/fonts.su ./Drivers/Middlewares/TFT_LCD/touch.cyclo ./Drivers/Middlewares/TFT_LCD/touch.d ./Drivers/Middlewares/TFT_LCD/touch.o ./Drivers/Middlewares/TFT_LCD/touch.su
 
 .PHONY: clean-Drivers-2f-Middlewares-2f-TFT_LCD
 

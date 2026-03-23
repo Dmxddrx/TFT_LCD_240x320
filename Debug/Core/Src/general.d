@@ -30,9 +30,9 @@ Core/Src/general.o: ../Core/Src/general.c ../Core/Inc/general.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Core/Inc/tft.h \
- C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD/ili9341.h \
+ C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD_2.4_320x240/ili9341.h \
  ../Core/Inc/main.h \
- C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD/fonts.h
+ C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD_2.4_320x240/fonts.h
 ../Core/Inc/general.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -66,6 +66,6 @@ Core/Src/general.o: ../Core/Src/general.c ../Core/Inc/general.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Core/Inc/tft.h:
-C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD/ili9341.h:
+C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD_2.4_320x240/ili9341.h:
 ../Core/Inc/main.h:
-C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD/fonts.h:
+C:/Users/DMXHP/Documents/Programing_Files_IoT/STM32CubeIDE/workspace_2.0.0/STM32F407VET6/TFT_Screen/Drivers/Middlewares/TFT_LCD_2.4_320x240/fonts.h:

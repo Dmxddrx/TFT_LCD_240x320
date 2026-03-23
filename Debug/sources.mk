@@ -24,6 +24,6 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
-Drivers/Middlewares/TFT_LCD \
+Drivers/Middlewares/TFT_LCD_2.4_320x240 \
 Drivers/STM32F4xx_HAL_Driver/Src \
 

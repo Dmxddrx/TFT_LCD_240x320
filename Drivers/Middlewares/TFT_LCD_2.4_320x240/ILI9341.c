@@ -1,4 +1,4 @@
-#include "ili9341.h"
+#include "ILI9341.h"
 
 /* ═══════════════════════════════════════════════════
    Low-level bus write

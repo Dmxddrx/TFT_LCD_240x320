@@ -28,7 +28,7 @@
 /* Status bar */
 #define PHONE_SIGNAL       4     /* 0-4 bars          */
 #define PHONE_WIFI_ON      1     /* 1=connected 0=off */
-#define PHONE_BATTERY_PCT  60    /* 0-100             */
+#define PHONE_BATTERY_PCT  10    /* 0-100             */
 #define PHONE_CHARGING     1     /* 1=show bolt       */
 
 /* Number of notifications shown (max 3) */

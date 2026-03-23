@@ -99,7 +99,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
     PC0     ------> ADC1_IN10
     PC5     ------> ADC1_IN15
     */
-    GPIO_InitStruct.Pin = T_Y__Pin|T_X__Pin;
+    GPIO_InitStruct.Pin = T_Yminus_Pin|T_Xminus_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
@@ -132,7 +132,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc)
     PC0     ------> ADC1_IN10
     PC5     ------> ADC1_IN15
     */
-    HAL_GPIO_DeInit(GPIOC, T_Y__Pin|T_X__Pin);
+    HAL_GPIO_DeInit(GPIOC, T_Yminus_Pin|T_Xminus_Pin);
 
     /* USER CODE BEGIN ADC1_MspDeInit 1 */
 
@@ -177,7 +177,7 @@ static void HAL_FSMC_MspInit(void){
   GPIO_InitStruct.Alternate = GPIO_AF12_FSMC;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
-  GPIO_InitStruct.Pin = FSMC_A18_LCD_RS_Pin|FSMC_D0_Y__Pin|FSMC_D1_X__Pin|GPIO_PIN_0
+  GPIO_InitStruct.Pin = FSMC_A18_LCD_RS_Pin|FSMC_D0_Yplus_Pin|FSMC_D1_Xplus_Pin|GPIO_PIN_0
                           |GPIO_PIN_1|FSMC_NOE_LCD_RD_Pin|FSMC_NWE_LCD_WR_Pin|FSMC_NE1_LCD_CS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -229,7 +229,7 @@ static void HAL_FSMC_MspDeInit(void){
   */
   HAL_GPIO_DeInit(GPIOE, GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10);
 
-  HAL_GPIO_DeInit(GPIOD, FSMC_A18_LCD_RS_Pin|FSMC_D0_Y__Pin|FSMC_D1_X__Pin|GPIO_PIN_0
+  HAL_GPIO_DeInit(GPIOD, FSMC_A18_LCD_RS_Pin|FSMC_D0_Yplus_Pin|FSMC_D1_Xplus_Pin|GPIO_PIN_0
                           |GPIO_PIN_1|FSMC_NOE_LCD_RD_Pin|FSMC_NWE_LCD_WR_Pin|FSMC_NE1_LCD_CS_Pin);
 
   /* USER CODE BEGIN FSMC_MspDeInit 1 */

@@ -16,7 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
    ----------------------------------------------------------------------
  */
-#include "fonts.h"
+#include "../TFT_LCD_2.4_320x240/fonts.h"
 
 // Simple 5x7 font
 const uint16_t Font5x7[] = {
